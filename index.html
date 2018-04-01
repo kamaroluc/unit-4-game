@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="assts/css/style.css">
+      </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+</head>
+<body>
+    <div class = jambotron>
+     <Div Id= "heading"> 
+         <h1> Crystals Collector</h1>
+     </Div>
+     <div = "gameRule">
+         you will be given a random number at the start of the game.
+         <br>
+        <p> there are four crystals below.By clicking on a crystal you will add a specific amount of points to your total score.
+        </p>
+     </div>
+         <br>
+     
+        <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+        
+        <div id= "scoreBoard">
+                "<p>wins: " + wins + "</p>" +
+                "<p>losses: " + losses + "</p>" +
+        </div>
+        <div class = images>
+<button id="crystal1" onClick="javascript:close_clip()"><img src="blackcristal.jpg" alt="Black Cristal "></button>
+ <button id="crystal2" onClick="javascript:close_clip()"><img src="graycristal.jpg" alt="Gray Cristal"></button>
+ <button id="crystal3" onClick="javascript:close_clip()"><img src="purplecristal.jpg" alt="Purple Cristal"></button>
+        </div>
+        <h2>Total score is </h2>
+
+        <Div id ="yourScore"></Div>
+
+
+
+
+     <script>
+     // variables to hold score 
+     var wins = 0;
+     var losses = 0;
+     var totalScore =0;
+     var random = Math.floor(Math.random() * 99) + 1;
+     $("#number-to-guess").text(random);
+    
+    
+
+// ... we generate a random number
+var userPick = Math.floor(Math.images() * 99) + 1;
+
+// ... and then dump the random number into our random-number div.
+$("#random-number").text(images);
+    
+var yourScore = images;
+console.log(yourScore);
+ </script>
+    </div>
+</body>
+</html>
